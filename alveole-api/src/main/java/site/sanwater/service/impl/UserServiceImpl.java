@@ -7,7 +7,6 @@
  */
 
 package site.sanwater.service.impl;
-
 import site.sanwater.common.exception.ErrorCode;
 import site.sanwater.common.exception.RenException;
 import site.sanwater.common.service.impl.BaseServiceImpl;
@@ -27,6 +26,7 @@ import java.util.Map;
 
 @Service
 public class UserServiceImpl extends BaseServiceImpl<UserDao, UserEntity> implements UserService {
+
 	@Autowired
 	private TokenService tokenService;
 

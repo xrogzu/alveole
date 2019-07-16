@@ -8,7 +8,6 @@
 
 package site.sanwater.config;
 
-import io.renren.dao.*;
 import site.sanwater.utils.RenException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

@@ -9,6 +9,7 @@
 package site.sanwater.common.service;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -18,7 +19,7 @@ import java.util.Collection;
  *
  * @author Mark sunlightcs@gmail.com
  */
-public interface BaseService<T> {
+public interface BaseService<T> extends IService<T> {
 
     /**
      * <p>

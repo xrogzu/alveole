@@ -14,6 +14,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.*;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.baomidou.mybatisplus.extension.toolkit.SqlHelper;
 import site.sanwater.common.constant.Constant;
 import site.sanwater.common.page.PageData;
@@ -35,7 +36,7 @@ import java.util.Map;
  *
  * @author Mark sunlightcs@gmail.com
  */
-public abstract class BaseServiceImpl<M extends BaseMapper<T>, T>  implements BaseService<T> {
+public abstract class BaseServiceImpl<M extends BaseMapper<T>, T> extends ServiceImpl<M,T> implements BaseService<T> {
     @Autowired
     protected M baseDao;
 
@@ -113,21 +114,6 @@ public abstract class BaseServiceImpl<M extends BaseMapper<T>, T>  implements Ba
         return params;
     }
 
-    /**
-     * <p>
-     * 判断数据库操作是否成功
-     * </p>
-     * <p>
-     * 注意！！ 该方法为 Integer 判断，不可传入 int 基本类型
-     * </p>
-     *
-     * @param result 数据库操作返回影响条数
-     * @return boolean
-     */
-    protected static boolean retBool(Integer result) {
-        return SqlHelper.retBool(result);
-    }
-
     protected Class<T> currentModelClass() {
         return ReflectionKit.getSuperClassGenericType(getClass(), 1);
     }
@@ -161,7 +147,7 @@ public abstract class BaseServiceImpl<M extends BaseMapper<T>, T>  implements Ba
 
     @Override
     public boolean insert(T entity) {
-        return BaseServiceImpl.retBool(baseDao.insert(entity));
+        return retBool(baseDao.insert(entity));
     }
 
     @Override
@@ -200,12 +186,12 @@ public abstract class BaseServiceImpl<M extends BaseMapper<T>, T>  implements Ba
 
     @Override
     public boolean updateById(T entity) {
-        return BaseServiceImpl.retBool(baseDao.updateById(entity));
+        return retBool(baseDao.updateById(entity));
     }
 
     @Override
     public boolean update(T entity, Wrapper<T> updateWrapper) {
-        return BaseServiceImpl.retBool(baseDao.update(entity, updateWrapper));
+        return retBool(baseDao.update(entity, updateWrapper));
     }
 
     @Override
