@@ -24,6 +24,9 @@ import java.util.List;
 
 import static com.google.common.collect.Lists.newArrayList;
 
+/**
+ * @author husen
+ */
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -44,10 +47,10 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("人人开源")
-            .description("renren-api模块接口文档")
-            .termsOfServiceUrl("https://www.renren.io")
-            .version("2.0")
+            .title("小窝")
+            .description("alveole-api模块接口文档")
+            .termsOfServiceUrl("https://www.sanwater.site")
+            .version("1.0")
             .build();
     }
 
