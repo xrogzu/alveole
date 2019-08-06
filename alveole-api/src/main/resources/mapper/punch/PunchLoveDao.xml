@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="site.sanwater.modules.punch.dao.PunchLoveDao">
+
+    <resultMap type="site.sanwater.modules.punch.entity.PunchLoveEntity" id="punchLoveMap">
+        <result property="id" column="ID"/>
+        <result property="punchId" column="PUNCH_ID"/>
+        <result property="userId" column="USER_ID"/>
+        <result property="delFlag" column="DEL_FLAG"/>
+        <result property="createBy" column="CREATE_BY"/>
+        <result property="createDate" column="CREATE_DATE"/>
+        <result property="updateBy" column="UPDATE_BY"/>
+        <result property="updateDate" column="UPDATE_DATE"/>
+    </resultMap>
+
+
+</mapper>

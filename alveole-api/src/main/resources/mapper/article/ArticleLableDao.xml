@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="site.sanwater.modules.article.dao.ArticleLableDao">
+
+    <resultMap type="site.sanwater.modules.article.entity.ArticleLableEntity" id="articleLableMap">
+        <result property="id" column="ID"/>
+        <result property="name" column="NAME"/>
+        <result property="enname" column="ENNAME"/>
+        <result property="descri" column="DESCRI"/>
+        <result property="delFlag" column="DEL_FLAG"/>
+        <result property="createBy" column="CREATE_BY"/>
+        <result property="createDate" column="CREATE_DATE"/>
+        <result property="updateBy" column="UPDATE_BY"/>
+        <result property="updateDate" column="UPDATE_DATE"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="site.sanwater.modules.article.dao.ArticleAnswerDao">
+
+    <resultMap type="site.sanwater.modules.article.entity.ArticleAnswerEntity" id="articleAnswerMap">
+        <result property="id" column="ID"/>
+        <result property="articleId" column="ARTICLE_ID"/>
+        <result property="content" column="CONTENT"/>
+        <result property="answerId" column="ANSWER_ID"/>
+        <result property="answerName" column="ANSWER_NAME"/>
+        <result property="answerType" column="ANSWER_TYPE"/>
+        <result property="targetId" column="TARGET_ID"/>
+        <result property="delFlag" column="DEL_FLAG"/>
+        <result property="createBy" column="CREATE_BY"/>
+        <result property="createDate" column="CREATE_DATE"/>
+        <result property="updateBy" column="UPDATE_BY"/>
+        <result property="updateDate" column="UPDATE_DATE"/>
+    </resultMap>
+
+
+</mapper>

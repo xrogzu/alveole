@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="site.sanwater.modules.dict.dao.DictDao">
+
+    <resultMap type="site.sanwater.modules.dict.entity.DictEntity" id="dictMap">
+        <result property="id" column="ID"/>
+        <result property="type" column="TYPE"/>
+        <result property="label" column="LABEL"/>
+        <result property="description" column="DESCRIPTION"/>
+        <result property="value" column="VALUE"/>
+        <result property="sort" column="SORT"/>
+        <result property="delFlag" column="DEL_FLAG"/>
+        <result property="createBy" column="CREATE_BY"/>
+        <result property="createDate" column="CREATE_DATE"/>
+        <result property="updateBy" column="UPDATE_BY"/>
+        <result property="updateDate" column="UPDATE_DATE"/>
+    </resultMap>
+
+
+</mapper>

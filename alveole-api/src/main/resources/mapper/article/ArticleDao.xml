@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="site.sanwater.modules.article.dao.ArticleDao">
+
+    <resultMap type="site.sanwater.modules.article.entity.ArticleEntity" id="articleMap">
+        <result property="id" column="ID"/>
+        <result property="title" column="TITLE"/>
+        <result property="content" column="CONTENT"/>
+        <result property="reviewNum" column="REVIEW_NUM"/>
+        <result property="thumbNum" column="THUMB_NUM"/>
+        <result property="articleType" column="ARTICLE_TYPE"/>
+        <result property="forbiddenReview" column="FORBIDDEN_REVIEW"/>
+        <result property="createUserPurl" column="CREATE_USER_PURL"/>
+        <result property="createUserSex" column="CREATE_USER_SEX"/>
+        <result property="createUserName" column="CREATE_USER_NAME"/>
+        <result property="delFlag" column="DEL_FLAG"/>
+        <result property="createBy" column="CREATE_BY"/>
+        <result property="createDate" column="CREATE_DATE"/>
+        <result property="updateBy" column="UPDATE_BY"/>
+        <result property="updateDate" column="UPDATE_DATE"/>
+    </resultMap>
+
+
+</mapper>

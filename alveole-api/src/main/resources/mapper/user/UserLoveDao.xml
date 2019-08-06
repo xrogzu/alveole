@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="site.sanwater.modules.user.dao.UserLoveDao">
+
+    <resultMap type="site.sanwater.modules.user.entity.UserLoveEntity" id="userLoveMap">
+        <result property="id" column="ID"/>
+        <result property="boyId" column="BOY_ID"/>
+        <result property="girlId" column="GIRL_ID"/>
+        <result property="loveDescrip" column="LOVE_DESCRIP"/>
+        <result property="loveScore" column="LOVE_SCORE"/>
+        <result property="delFlag" column="DEL_FLAG"/>
+        <result property="createBy" column="CREATE_BY"/>
+        <result property="createDate" column="CREATE_DATE"/>
+        <result property="updateBy" column="UPDATE_BY"/>
+        <result property="updateDate" column="UPDATE_DATE"/>
+    </resultMap>
+
+
+</mapper>
